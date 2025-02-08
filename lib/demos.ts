@@ -6,6 +6,15 @@ export type Item = {
 
 export const demos: { name: string; items: Item[] }[] = [
   {
+    name: 'Backtesting',
+    items: [
+      {
+        name: 'Backtest1',
+        slug: 'backtest1',
+      }
+    ]
+  },
+  {
     name: 'Layouts',
     items: [
       {
