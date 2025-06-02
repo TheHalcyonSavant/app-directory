@@ -22,7 +22,6 @@ export default async function Layout({
   return (
     <div className="flex">
       {children}
-      <span>GOOG_SHOP_CLIENT_ID ${process.env.GOOG_SHOP_CLIENT_ID}</span>
     </div>
   );
 };
