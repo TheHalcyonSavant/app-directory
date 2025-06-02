@@ -110,6 +110,15 @@ export const demos: { name: string; items: Item[] }[] = [
         slug: 'styling',
         description: 'Preview the supported styling solutions',
       },
+      {
+        name: 'Interview',
+        slug: 'interview',
+        description: ''
+      },
+      {
+        name: 'Google Content API',
+        slug: 'content-api',
+      }
     ],
   },
 ];
