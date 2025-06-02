@@ -19,10 +19,10 @@ export default async function Layout({
 }) {
   // const result = await startServer();
   // console.log(result.products[0]);
-  console.log('GOOG_SHOP_CLIENT_ID', process.env.GOOG_SHOP_CLIENT_ID)
   return (
     <div className="flex">
       {children}
+      <span>GOOG_SHOP_CLIENT_ID ${process.env.GOOG_SHOP_CLIENT_ID}</span>
     </div>
   );
 };
