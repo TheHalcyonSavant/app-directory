@@ -4,12 +4,12 @@ import type { ReactElement } from 'react';
 
 export const runtime = 'edge';
 
-const interSemiBold = fetch(
-  new URL('./Inter-SemiBold.ttf', import.meta.url),
-).then((res) => res.arrayBuffer());
-
 export async function GET(req: NextRequest): Promise<Response | ImageResponse> {
   try {
+    const interSemiBold = fetch(new URL('/Inter-SemiBold.ttf', req.url)).then(
+      (res) => res.arrayBuffer(),
+    );
+
     const { searchParams } = new URL(req.url);
     const isLight = req.headers.get('Sec-CH-Prefers-Color-Scheme') === 'light';
 
