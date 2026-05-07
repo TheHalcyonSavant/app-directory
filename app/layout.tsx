@@ -3,7 +3,6 @@ import { AddressBar } from '#/ui/address-bar';
 // import Byline from '#/ui/byline';
 import { GlobalNav } from '#/ui/global-nav';
 import { Metadata } from 'next';
-import { GeistSans } from "geist/font/sans"; // import font
 
 export const metadata: Metadata = {
   title: {
@@ -31,7 +30,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="[color-scheme:dark]">
-      <body className={`${GeistSans.className} overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')] pb-36`}>
+      <body
+        className={`overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')] pb-36`}
+      >
         <GlobalNav />
 
         <div className="lg:pl-72">
