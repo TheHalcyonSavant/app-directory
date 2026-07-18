@@ -74,7 +74,7 @@ export async function GET(req: NextRequest): Promise<Response | ImageResponse> {
   }
 }
 
-function LightSvg(): ReactElement {
+function LightSvg(): ReactElement<any> {
   return (
     <svg
       fill="none"
@@ -379,7 +379,7 @@ function LightSvg(): ReactElement {
   );
 }
 
-function DarkSvg(): ReactElement {
+function DarkSvg(): ReactElement<any> {
   return (
     <svg
       fill="none"
